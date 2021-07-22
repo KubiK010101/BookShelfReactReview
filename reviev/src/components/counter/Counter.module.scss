@@ -1,0 +1,80 @@
+.counter {
+    &__button-add{
+        background-color: #bd3ed6;
+        color: cornsilk;
+        text-decoration: none;
+        padding: 8px;
+        border-radius:5px;
+    
+        &:hover{
+            text-decoration: none;
+            color: cornsilk;
+            background-color:#bd5ed6;
+        }
+    }
+    &__book-card {
+        transition: all .4s;
+        border-radius: 20px;
+        background-color: rgba(240, 248, 255, 0.4);
+        margin-bottom: 25px;
+        padding: 24px;
+        border: 2px solid rgba(240, 248, 255, 0.253), 
+        2px solid rgba(0, 0, 0, 0.253), 
+        2px solid rgba(0, 0, 0, 0.253), 
+        2px solid rgba(240, 248, 255, 0.253);
+
+
+        box-shadow: rgba(240, 248, 255, 0.253) 15px -15px 15px;
+
+        &:hover {
+            box-shadow: rgba(240, 248, 255, 0.253) 5px -5px 15px;
+            background-color: rgba(240, 248, 255, 0.6);
+
+        }
+
+        &__info {
+            // text-align: right;
+            color: black;
+            font-weight: normal;
+            font-size: 1.2em;
+            margin: .4em 0;
+        }
+
+        &__link,
+        & a {
+
+            display: block;
+            padding: .5em .7em;
+
+            &,
+            &:hover {
+                text-decoration: none;
+                color: black;
+            }
+
+            &.-delete {
+                transition: all .4s;
+                color: #e40067;
+                background: transparent;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: #E40066;
+                    color: aliceblue;
+                }
+            }
+
+            &.-edit {
+                transition: all .4s;
+                color: #2f6bcc;
+                background: transparent;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: #2f6bcc;
+                    color: aliceblue;
+                }
+            }
+        }
+    }
+}
